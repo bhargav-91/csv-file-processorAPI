@@ -23,7 +23,7 @@ app.add_middleware(
 async def upload():
     data = []
     try:
-        with open('/Users/bhargj/worksapce/SG-Hackverse/test-file/blockchain_watchdog.csv', 'r') as csvf:
+        with open('/Users/bhargj/worksapce/SG-Hackverse/watchDogFileUploader-server/blockchain_watchdog.csv', 'r') as csvf:
             csvReader = csv.DictReader(csvf)
             for rows in csvReader:
                 print('The value of ROW Is : ',rows)
